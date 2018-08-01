@@ -10,6 +10,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
@@ -29,6 +30,10 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
+end
+
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
